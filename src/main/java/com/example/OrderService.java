@@ -6,10 +6,13 @@ import org.slf4j.LoggerFactory;
 
 public class OrderService {
     //Lista med alla produkter
+    // (för att snabbt kunna gå igenom alla produkter och söka på dom via index vid behov)
     private List<Product> allProducts;
     //Lista med alla ordrar
+    // (bra att kunna se ordning om man till exempel lägger till funktion för att se senaste ordern)
     private List<Order> allOrders;
     //map med kundnamn som nyckel, data är kundens orderhistorik
+    // (används för enkel gruppering av ordrar per kund)
     private Map<String, List<Order>> customerOrders;
     private static final Logger logger = LoggerFactory.getLogger(OrderService.class);
 
