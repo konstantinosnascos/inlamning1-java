@@ -48,7 +48,7 @@ public class InputHelper {
                     scan.nextLine(); // rensar raden
                     return value;
                 } catch (InputMismatchException e) {
-                    System.out.println("Fel input. Skriv ett nummer tack.");
+                    System.out.println("Fel input. Skriv ett nummer tack(Testa komma istället för punkt om du försöker göra decimaltal.");
                     logger.warn("Ogiltig inmatning av double: {}", e.getMessage());
                     scan.next(); // rensar felaktig input
                 }
